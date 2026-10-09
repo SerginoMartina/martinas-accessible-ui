@@ -61,9 +61,12 @@ pnpm build
 
 ## 🏗 Project Structure
 
+- `.storybook`: Storybook configuration and preview setup.
+- `stories`: Storybook source stories, grouped by component layer and separate from application source.
+- `storybook-static`: Generated output from `pnpm build-storybook`; ignored by Git and should not be edited manually.
 - `src/components/atoms`: Base controls, foundation/theme/layout primitives, avatars, loading skeletons, skip links, and live regions.
 - `src/components/molecules`: Selection, overlays, navigation, disclosure, feedback, workflow, locale, tooltip, date-range, pagination, form, and upload controls.
 - `src/components/organisms`: Complex data, dialog, accessible content and media patterns, authentication integrations, and complete form/workflow examples.
-- `src/docs`: Component overview story.
+- `src/docs`: Interactive component dashboard and its documentation.
 - `src/theme`: Design tokens and styles.
 - `QA.md`: Repository QA findings, validation results, and prioritized follow-up work.
